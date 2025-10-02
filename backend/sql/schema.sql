@@ -1,0 +1,26 @@
+-- This project originally included a MySQL schema for the `contact_messages`
+-- table. The backend has been migrated to use MongoDB (Mongoose). If you need
+-- to recreate the equivalent structure in MongoDB (indexes), run the
+-- migration script below.
+--
+-- Migration helper (Node.js):
+--   node migrations/migrate_sql_to_mongo.js
+--
+-- Make sure `MONGODB_URL` is set in `../.env` before running.
+
+-- The original MySQL schema (kept here for reference):
+--
+-- CREATE TABLE IF NOT EXISTS contact_messages (
+--   id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+--   name VARCHAR(150) NOT NULL,
+--   email VARCHAR(150) NOT NULL,
+--   mobile VARCHAR(20) NOT NULL,
+--   company VARCHAR(150) NOT NULL,
+--   subject VARCHAR(200) NOT NULL,
+--   designation VARCHAR(150) NOT NULL,
+--   requirement TEXT NOT NULL,
+--   created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+--   PRIMARY KEY (id),
+--   INDEX idx_created_at (created_at),
+--   INDEX idx_email (email)
+-- ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;

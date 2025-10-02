@@ -1,0 +1,43 @@
+:root {
+  /* Brand */
+  --brand-700: #002c5f;
+  --brand-600: #004080;
+  --brand-500: #0b4f97;
+
+  /* Neutrals */
+  --bg: #ffffff;
+  --bg-alt: #f5f8fc;
+  --text: #0e1b2c;
+  --muted: #5b6b84;
+  --border: #e2e8f0;
+
+  /* Feedback */
+  --success: #0f9d58;
+  --error: #d93025;
+  --focus: #66afe9;
+
+  /* Layout */
+  --maxw: 1200px;
+  --radius: 12px;
+  --shadow: 0 8px 24px rgba(0,0,0,0.08);
+
+  /* Spacing – 8pt scale */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+
+  /* Fluid type */
+  --h1: clamp(2rem, 1.25rem + 2.5vw, 3.25rem);
+  --h2: clamp(1.5rem, 1.1rem + 1.5vw, 2.25rem);
+  --h3: clamp(1.25rem, 1rem + 1vw, 1.75rem);
+  --body: clamp(1rem, 0.95rem + 0.25vw, 1.0625rem);
+
+  scroll-behavior: smooth;
+}
